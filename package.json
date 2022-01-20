@@ -1,6 +1,6 @@
 {
-  "name": "templates-builder-ts",
-  "version": "0.1.0",
+  "name": "time-tracking-dashboard",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^1.7.4",
@@ -49,5 +49,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/latif-essam/frontendmentors-challenges.git"
+  },
+  "keywords": [
+    "react",
+    "react-ts",
+    "psd-to-react"
+  ],
+  "author": "latif essam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/latif-essam/frontendmentors-challenges/issues"
   }
 }
