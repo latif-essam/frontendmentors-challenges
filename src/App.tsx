@@ -4,8 +4,8 @@ import "./styles/App.css";
 
 function App() {
   return (
-    <div>
-      <h1>first Things First</h1>
+    <div style={{ textAlign: "center" }}>
+      <h1>Time Tracking Dashboard</h1>
     </div>
   );
 }
