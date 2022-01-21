@@ -1,12 +1,14 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./styles/App.css";
+import Layout from "./components/Layout";
+import Home from "./screens/Home";
 
 function App() {
   return (
-    <div style={{ textAlign: "center" }}>
-      <h1>Time Tracking Dashboard</h1>
-    </div>
+    <Layout>
+      <Home />
+    </Layout>
   );
 }
 
