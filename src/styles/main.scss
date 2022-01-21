@@ -27,7 +27,7 @@ $ff-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
   box-sizing: border-box;
 }
 body {
-  font-family: $ff-main;
+  font-family: cursive, sans-serif;
   font-size: $fs-card-title;
 }
 
@@ -128,7 +128,7 @@ main {
       background-color: $Dark-blue;
       &:hover {
         background-color: $Desaturated-blue;
-        filter: brightness(80%);
+        filter: brightness(90%);
         cursor: pointer;
       }
     }
