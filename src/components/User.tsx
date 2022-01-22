@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import userImg from "../assets/image-jeremy.png";
+import ButtonC from "./ButtonC";
+const trackers = ["daily", "weekly", "monthly"];
 const User = ({
   handleTracker,
   trackerType,
@@ -7,6 +9,12 @@ const User = ({
   handleTracker: any;
   trackerType: string;
 }) => {
+  const [active, setActive] = useState();
+  const handleActive = (event: any, t: string) => {
+    event.preventDefault();
+    setActive(event.target.id);
+    handleTracker(t);
+  };
   return (
     <div className="user-container">
       <div className="user">
@@ -19,30 +27,16 @@ const User = ({
         </div>
       </div>
       <div className="time-track">
-        <button
-          style={{
-            color: trackerType === "daily" ? "white" : "hsl(235, 45%, 61%)",
-          }}
-          onClick={() => handleTracker("daily")}
-        >
-          Daily
-        </button>
-        <button
-          style={{
-            color: trackerType === "weekly" ? "white" : "hsl(235, 45%, 61%)",
-          }}
-          onClick={() => handleTracker("weekly")}
-        >
-          Weekly
-        </button>
-        <button
-          style={{
-            color: trackerType === "monthly" ? "white" : "hsl(235, 45%, 61%)",
-          }}
-          onClick={() => handleTracker("monthly")}
-        >
-          Monthly
-        </button>
+        {trackers.map((t, index) => (
+          <ButtonC
+            key={index}
+            id={index}
+            title={t.charAt(0).toUpperCase() + t.slice(1)}
+            onClick={(e: any) => handleActive(e, t)}
+            tracker={t}
+            className={active === index.toString() ? "active" : ""}
+          />
+        ))}
       </div>
     </div>
   );
