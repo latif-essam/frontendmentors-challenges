@@ -11,11 +11,11 @@ const User = ({
     <div className="user-container">
       <div className="user">
         <div className="user_img">
-          <img src={userImg} alt="user profile" width="45px" height="45px" />
+          <img src={userImg} alt="user profile" width={45} height={45} />
         </div>
         <div>
           <p className="user_report"> Report for</p>
-          <h2 className="user_title">Jeremy Robson</h2>
+          <h1 className="user_title">Jeremy Robson</h1>
         </div>
       </div>
       <div className="time-track">
