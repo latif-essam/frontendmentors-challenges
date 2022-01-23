@@ -33,7 +33,6 @@ const User = ({
             id={index}
             title={t.charAt(0).toUpperCase() + t.slice(1)}
             onClick={(e: any) => handleActive(e, t)}
-            tracker={t}
             className={active === index.toString() ? "active" : ""}
           />
         ))}
