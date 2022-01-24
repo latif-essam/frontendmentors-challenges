@@ -9,12 +9,14 @@ const User = ({
   handleTracker: any;
   trackerType: string;
 }) => {
-  const [active, setActive] = useState();
+  const [active, setActive] = useState("0");
+
   const handleActive = (event: any, t: string) => {
     event.preventDefault();
     setActive(event.target.id);
     handleTracker(t);
   };
+
   return (
     <div className="user-container">
       <div className="user">
