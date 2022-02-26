@@ -31,12 +31,12 @@ const TimeCard = ({
 }) => {
   const [tracker, setTracker] = useState("daily");
   useEffect(() => {
+    console.log({ trackerType });
     if (trackerType === "daily") setTracker("Day");
     else if (trackerType === "weekly") setTracker("Week");
     else setTracker("Month");
   }, [trackerType]);
 
-  console.log(tracker);
   return (
     <div className="card" style={{ backgroundColor: card.color }}>
       <div style={{ textAlign: "right", overflow: "hidden", height: 30 }}>
