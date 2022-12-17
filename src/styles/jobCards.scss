@@ -1,0 +1,70 @@
+.container {
+  inline-size: 80%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.card {
+  // plus feaures for new feaured jobs
+  &_plus {
+    border-left: 5px solid $header-bg;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 30px 3%;
+  background-color: $light_filter;
+  margin-block: 15px;
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px $dark_gray;
+
+  .logo {
+    margin-inline-end: 15px;
+    border-radius: 50%;
+  }
+
+  .info {
+    flex: 2;
+    h2 {
+      color: black;
+      font-size: large;
+    }
+    h2:hover {
+      color: $header-bg;
+      cursor: pointer;
+    }
+    &_2 {
+      color: gray;
+      font-size: small;
+      span {
+        margin-inline-end: 10px;
+      }
+    }
+  }
+  .tags {
+    flex: 2;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      list-style: none;
+
+      li {
+        margin-inline: 2%;
+        background-color: $light_filter;
+        color: $header-bg;
+        font-weight: bold;
+        padding: 2%;
+        border-radius: 5px;
+        &:hover {
+          color: $secondary_bg;
+          background-color: $header-bg;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

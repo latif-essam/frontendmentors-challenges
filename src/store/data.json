@@ -1,104 +1,152 @@
 [
   {
-    "title": "Work",
-    "timeframes": {
-      "daily": {
-        "current": 5,
-        "previous": 7
-      },
-      "weekly": {
-        "current": 32,
-        "previous": 36
-      },
-      "monthly": {
-        "current": 103,
-        "previous": 128
-      }
-    }
+    "id": 1,
+    "company": "Photosnap",
+    "logo": "photosnap.svg",
+    "newJob": true,
+    "featured": true,
+    "position": "Senior Frontend Developer",
+    "role": "Frontend",
+    "level": "Senior",
+    "postedAt": "1d ago",
+    "contract": "Full Time",
+    "location": "USA Only",
+    "languages": ["HTML", "CSS", "JavaScript"],
+    "tools": []
   },
   {
-    "title": "Play",
-    "timeframes": {
-      "daily": {
-        "current": 1,
-        "previous": 2
-      },
-      "weekly": {
-        "current": 10,
-        "previous": 8
-      },
-      "monthly": {
-        "current": 23,
-        "previous": 29
-      }
-    }
+    "id": 2,
+    "company": "Manage",
+    "logo": "manage.svg",
+    "newJob": true,
+    "featured": true,
+    "position": "Fullstack Developer",
+    "role": "Fullstack",
+    "level": "Midweight",
+    "postedAt": "1d ago",
+    "contract": "Part Time",
+    "location": "Remote",
+    "languages": ["Python"],
+    "tools": ["React"]
   },
   {
-    "title": "Study",
-    "timeframes": {
-      "daily": {
-        "current": 0,
-        "previous": 1
-      },
-      "weekly": {
-        "current": 4,
-        "previous": 7
-      },
-      "monthly": {
-        "current": 13,
-        "previous": 19
-      }
-    }
+    "id": 3,
+    "company": "Account",
+    "logo": "account.svg",
+    "newJob": true,
+    "featured": false,
+    "position": "Junior Frontend Developer",
+    "role": "Frontend",
+    "level": "Junior",
+    "postedAt": "2d ago",
+    "contract": "Part Time",
+    "location": "USA Only",
+    "languages": ["JavaScript"],
+    "tools": ["React", "Sass"]
   },
   {
-    "title": "Exercise",
-    "timeframes": {
-      "daily": {
-        "current": 1,
-        "previous": 1
-      },
-      "weekly": {
-        "current": 4,
-        "previous": 5
-      },
-      "monthly": {
-        "current": 11,
-        "previous": 18
-      }
-    }
+    "id": 4,
+    "company": "MyHome",
+    "logo": "myhome.svg",
+    "newJob": false,
+    "featured": false,
+    "position": "Junior Frontend Developer",
+    "role": "Frontend",
+    "level": "Junior",
+    "postedAt": "5d ago",
+    "contract": "Contract",
+    "location": "USA Only",
+    "languages": ["CSS", "JavaScript"],
+    "tools": []
   },
   {
-    "title": "Social",
-    "timeframes": {
-      "daily": {
-        "current": 1,
-        "previous": 3
-      },
-      "weekly": {
-        "current": 5,
-        "previous": 10
-      },
-      "monthly": {
-        "current": 21,
-        "previous": 23
-      }
-    }
+    "id": 5,
+    "company": "Loop Studios",
+    "logo": "loop-studios.svg",
+    "newJob": false,
+    "featured": false,
+    "position": "Software Engineer",
+    "role": "Fullstack",
+    "level": "Midweight",
+    "postedAt": "1w ago",
+    "contract": "Full Time",
+    "location": "Worldwide",
+    "languages": ["JavaScript"],
+    "tools": ["Ruby", "Sass"]
   },
   {
-    "title": "Self Care",
-    "timeframes": {
-      "daily": {
-        "current": 0,
-        "previous": 1
-      },
-      "weekly": {
-        "current": 2,
-        "previous": 2
-      },
-      "monthly": {
-        "current": 7,
-        "previous": 11
-      }
-    }
+    "id": 6,
+    "company": "FaceIt",
+    "logo": "faceit.svg",
+    "newJob": false,
+    "featured": false,
+    "position": "Junior Backend Developer",
+    "role": "Backend",
+    "level": "Junior",
+    "postedAt": "2w ago",
+    "contract": "Full Time",
+    "location": "UK Only",
+    "languages": ["Ruby"],
+    "tools": ["RoR"]
+  },
+  {
+    "id": 7,
+    "company": "Shortly",
+    "logo": "shortly.svg",
+    "newJob": false,
+    "featured": false,
+    "position": "Junior Developer",
+    "role": "Frontend",
+    "level": "Junior",
+    "postedAt": "2w ago",
+    "contract": "Full Time",
+    "location": "Worldwide",
+    "languages": ["HTML", "JavaScript"],
+    "tools": ["Sass"]
+  },
+  {
+    "id": 8,
+    "company": "Insure",
+    "logo": "insure.svg",
+    "newJob": false,
+    "featured": false,
+    "position": "Junior Frontend Developer",
+    "role": "Frontend",
+    "level": "Junior",
+    "postedAt": "2w ago",
+    "contract": "Full Time",
+    "location": "USA Only",
+    "languages": ["JavaScript"],
+    "tools": ["Vue", "Sass"]
+  },
+  {
+    "id": 9,
+    "company": "Eyecam Co.",
+    "logo": "eyecam-co.svg",
+    "newJob": false,
+    "featured": false,
+    "position": "Full Stack Engineer",
+    "role": "Fullstack",
+    "level": "Midweight",
+    "postedAt": "3w ago",
+    "contract": "Full Time",
+    "location": "Worldwide",
+    "languages": ["JavaScript", "Python"],
+    "tools": ["Django"]
+  },
+  {
+    "id": 10,
+    "company": "The Air Filter Company",
+    "logo": "the-air-filter-company.svg",
+    "newJob": false,
+    "featured": false,
+    "position": "Front-end Dev",
+    "role": "Frontend",
+    "level": "Junior",
+    "postedAt": "1mo ago",
+    "contract": "Part Time",
+    "location": "Worldwide",
+    "languages": ["JavaScript"],
+    "tools": ["React", "Sass"]
   }
 ]

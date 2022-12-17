@@ -1,0 +1,17 @@
+.badges {
+  color: $header-bg;
+  font-weight: 500;
+}
+.badge {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  margin-inline: 10px;
+  background-color: $header-bg;
+}
+.separator {
+  width: auto;
+  min-height: 1px;
+}
