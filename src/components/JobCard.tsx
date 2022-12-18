@@ -27,22 +27,24 @@ const JobCard = ({ job, setTags }: PropsWithChildren<JobCardProps>) => {
   const tags = [role, level, ...languages, ...tools];
   return (
     <div className={`card ${featured && newJob ? "card_plus" : ""}`} key={id}>
-      <div className="logo">
-        <img src={require(`./../assets/images/${logo}`)} height={"100%"} />
-      </div>
-      <div className="info">
-        <div className="badges">
-          <span>{company}</span>
-          <Badge visible={newJob} type="new" />
-          <Badge visible={featured} type="featured" />
+      <div className="card_pre">
+        <div className="logo">
+          <img src={require(`./../assets/images/${logo}`)} height={"100%"} />
         </div>
-        <Separator size={15} />
-        <h2>{position}</h2>
-        <Separator size={15} />
-        <div className="info_2">
-          <span>{postedAt}</span>
-          <span>. {contract}</span>
-          <span>. {location}</span>
+        <div className="info">
+          <div className="badges">
+            <span className="company">{company}</span>
+            <Badge visible={newJob} type="new" />
+            <Badge visible={featured} type="featured" />
+          </div>
+          <Separator size={15} />
+          <h2>{position}</h2>
+          <Separator size={15} />
+          <div className="info_2">
+            <span>{postedAt}</span>
+            <span>. {contract}</span>
+            <span>. {location}</span>
+          </div>
         </div>
       </div>
       <Tags keys={tags} onClick={setTags} />

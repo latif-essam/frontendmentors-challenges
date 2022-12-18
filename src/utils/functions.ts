@@ -13,6 +13,7 @@ export interface JobObj {
   languages: string[];
   tools: string[];
 }
+
 const isExist = (name: never, obj: JobObj): boolean =>
   obj[name] === undefined ? false : true;
 

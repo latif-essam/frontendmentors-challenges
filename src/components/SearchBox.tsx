@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, RefCallback } from "react";
+import { PropsWithChildren } from "react";
 
 interface SearchBoxProps {
   list: string[];
@@ -9,11 +9,16 @@ const SearchBox = ({ list, onClick }: PropsWithChildren<SearchBoxProps>) => {
     <div className="search-box">
       <ul>
         {list.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index} onClick={() => onClick(index)}>
+            <span>{item}</span>
+            <button>X</button>
+          </li>
         ))}
       </ul>
 
-      <button onClick={onClick}>Clear</button>
+      <button className="clear" onClick={() => onClick(-1)}>
+        Clear
+      </button>
     </div>
   );
 };

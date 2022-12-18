@@ -1,5 +1,5 @@
 .badges {
-  color: $header-bg;
+  color: $primary;
   font-weight: 500;
 }
 .badge {
@@ -9,9 +9,68 @@
   padding: 5px 10px;
   border-radius: 30px;
   margin-inline: 10px;
-  background-color: $header-bg;
+  background-color: $primary;
 }
 .separator {
   width: auto;
   min-height: 1px;
+}
+
+// search component
+.search-box {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-inline-start: 15px;
+
+    li {
+      margin-inline: 10px;
+      margin-block: 20px;
+      background-color: $light_filter;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      border-radius: 4px;
+      span {
+        margin-inline: 5px;
+        padding: 5px;
+        color: $primary;
+        font-weight: bold;
+      }
+
+      button {
+        border-radius: 0px 4px 4px 0px;
+        padding: 5px;
+        border: none;
+        padding: 5px;
+        background-color: $primary;
+        color: white;
+        font-weight: 600;
+        &:hover {
+          background-color: $vdark_gray;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .clear {
+    font-size: 15px;
+    border: none;
+    margin-inline: 20px 40px;
+    color: $primary;
+    font-weight: 600;
+    background-color: transparent;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
 }

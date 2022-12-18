@@ -7,7 +7,7 @@ interface TagsProps {
 }
 const Tags = ({ keys, onClick }: PropsWithChildren<TagsProps>) => {
   return (
-    <div className="tags">
+    <div className="card_tags">
       <ul>
         {keys.map((key, index) => (
           <li

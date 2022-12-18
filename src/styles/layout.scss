@@ -1,6 +1,6 @@
 header {
-  background-color: $header-bg;
-  height: calc(10vh + 20px);
+  background-color: $primary;
+  height: calc(15vh + 25px);
   background-image: url("./../assets/images/bg-header-desktop.svg");
   background-size: cover;
   //   background-color: ;
@@ -11,12 +11,15 @@ main {
   inline-size: 100%;
   margin-inline: auto;
   background-color: $secondary_bg;
-  padding-block: calc(10vh - 20px);
+  padding-block: calc($mvp + 5px);
+  .search-box {
+    margin-block: $mvm $mvp;
+  }
 }
 footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  height: calc(10vh - 20px);
-  background-color: $header-bg;
+  height: $mvp;
+  background-color: $primary;
 }

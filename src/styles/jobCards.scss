@@ -1,4 +1,4 @@
-.container {
+.cards-container {
   inline-size: 80%;
   margin-inline: auto;
   display: flex;
@@ -8,7 +8,7 @@
 .card {
   // plus feaures for new feaured jobs
   &_plus {
-    border-left: 5px solid $header-bg;
+    border-left: 5px solid $primary;
   }
 
   display: flex;
@@ -20,32 +20,38 @@
   height: 150px;
   border-radius: 5px;
   box-shadow: 0px 5px 15px $dark_gray;
-
-  .logo {
-    margin-inline-end: 15px;
-    border-radius: 50%;
-  }
-
-  .info {
-    flex: 2;
-    h2 {
-      color: black;
-      font-size: large;
+  .card_pre {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    .logo {
+      margin-inline-end: 15px;
+      border-radius: 50%;
     }
-    h2:hover {
-      color: $header-bg;
-      cursor: pointer;
-    }
-    &_2 {
-      color: gray;
-      font-size: small;
-      span {
-        margin-inline-end: 10px;
+
+    .info {
+      flex: 2;
+      h2 {
+        color: black;
+        font-size: large;
+      }
+      h2:hover {
+        color: $primary;
+        cursor: pointer;
+      }
+      &_2 {
+        color: gray;
+        font-size: small;
+        span {
+          margin-inline-end: 10px;
+        }
       }
     }
   }
-  .tags {
+  .card_tags {
     flex: 2;
+    margin-block: auto;
+
     ul {
       display: flex;
       flex-direction: row;
@@ -55,13 +61,13 @@
       li {
         margin-inline: 2%;
         background-color: $light_filter;
-        color: $header-bg;
+        color: $primary;
         font-weight: bold;
         padding: 2%;
         border-radius: 5px;
         &:hover {
           color: $secondary_bg;
-          background-color: $header-bg;
+          background-color: $primary;
           cursor: pointer;
         }
       }

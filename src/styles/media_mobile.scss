@@ -1,0 +1,54 @@
+@media screen and (max-width: 767px) {
+  main {
+    .cards-container > .card {
+      flex-direction: column;
+      height: fit-content;
+      margin-block: 20px 50px;
+      .card_pre {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        .logo {
+          position: static;
+          margin-block: -65px 15px;
+          width: fit-content;
+          height: 70px;
+        }
+
+        .info {
+          margin-top: 0px;
+          flex: 2;
+          .badges {
+            .company {
+              margin-inline-end: 30px;
+            }
+          }
+          h2 {
+            margin-block: 15px;
+          }
+          h2:hover {
+            color: $primary;
+            cursor: pointer;
+          }
+          &_2 {
+            margin-block: 0px 10px;
+            color: gray;
+            font-size: small;
+            span {
+              margin-inline-end: 10px;
+            }
+          }
+        }
+        border-bottom: 1px solid gray;
+      }
+      .card_tags ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+    }
+    .search-box ul {
+      flex-wrap: wrap;
+    }
+  }
+}
