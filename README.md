@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![https://github.com/latif-essam/frontendmentors-challenges/tree/static-job-listings/src/assets/shots/main_desktop.png](Desktop)
+![Desktop](https://github.com/latif-essam/frontendmentors-challenges/blob/static-job-listings/src/assets/shots/main_desktop.png)
 
 ### Links
 
@@ -50,8 +50,6 @@ use different tools and techniques to develop this application with React.
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
-```
-
 <div className="card_pre">
         <div className="logo">
           <img src={require(`./../assets/images/${logo}`)} height={"100%"} />
@@ -73,6 +71,7 @@ use different tools and techniques to develop this application with React.
         </div>
       </div>
     </div>
+```
 ```css
 .card {
   // plus feaures for new feaured jobs
