@@ -22,4 +22,13 @@ footer {
   width: 100%;
   height: $mvp;
   background-color: $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    margin-inline: 8px;
+    color: $secondary_bg;
+    text-decoration: solid;
+  }
+  font-weight: 600;
 }

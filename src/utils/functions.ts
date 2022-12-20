@@ -14,8 +14,8 @@ export interface JobObj {
   tools: string[];
 }
 
-const isExist = (name: never, obj: JobObj): boolean =>
-  obj[name] === undefined ? false : true;
+// const isExist = (name: never, obj: JobObj): boolean =>
+//   obj[name] === undefined ? false : true;
 
 const removeDuplicates = (arr: string[]): string[] =>
   arr.filter((el, index) => index === arr.indexOf(el));
