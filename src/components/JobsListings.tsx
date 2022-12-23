@@ -1,5 +1,5 @@
-import React, { PropsWithChildren, useEffect, useState } from "react";
-import { filterJobsByTags, JobObj, removeDuplicates } from "../utils/functions";
+import { PropsWithChildren, useEffect, useState } from "react";
+import { filterJobsByTags, JobObj } from "../utils/functions";
 import JobCard from "./JobCard";
 import SearchBox from "./SearchBox";
 

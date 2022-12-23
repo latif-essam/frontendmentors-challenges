@@ -7,7 +7,7 @@ interface LayoutProps {}
 const Layout = ({}: PropsWithChildren<LayoutProps>) => {
   return (
     <>
-      <header />
+      <header>{/* <SwitchTheme theme="dark" /> */}</header>
       <main>
         <JobListings data={data} />
       </main>

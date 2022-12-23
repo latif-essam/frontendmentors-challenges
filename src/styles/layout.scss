@@ -4,6 +4,11 @@ header {
   background-image: url("./../assets/images/bg-header-desktop.svg");
   background-size: cover;
   //   background-color: ;
+  .theme-toggle {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+  }
 }
 main {
   font-size: 15px;

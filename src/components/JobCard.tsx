@@ -29,7 +29,11 @@ const JobCard = ({ job, setTags }: PropsWithChildren<JobCardProps>) => {
     <div className={`card ${featured && newJob ? "card_plus" : ""}`} key={id}>
       <div className="card_pre">
         <div className="logo">
-          <img src={require(`./../assets/images/${logo}`)} height={"100%"} />
+          <img
+            src={require(`./../assets/images/${logo}`)}
+            height={"100%"}
+            alt={company || role}
+          />
         </div>
         <div className="info">
           <div className="badges">
