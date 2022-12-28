@@ -32,7 +32,7 @@ const JobCard = ({ job, setTags }: PropsWithChildren<JobCardProps>) => {
           <img
             src={require(`./../assets/images/${logo}`)}
             height={"100%"}
-            alt={company || role}
+            alt={company}
           />
         </div>
         <div className="info">
